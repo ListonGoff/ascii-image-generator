@@ -44,7 +44,8 @@ fn main() {
         println!();
     }
 }
-fn print_img(img: DynamicImage) {
+
+fn print_pixel_info(img: DynamicImage) {
     for pixel in img.pixels() {
         print!("Pos: ({}, {}); Rgba: (", pixel.0, pixel.1);
 
